@@ -1,0 +1,175 @@
+/* Reset CSS */
+.logo {font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-image: url('wsg.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        align-content: center;
+        overflow-x: hidden;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+header {
+    background-color: #0056b3;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 28px;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ffd700;
+}
+
+/* Section Styles */
+.tab {
+    padding: 60px 0;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.tab h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.tab p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #0056b3;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid #fff;
+}
+
+/* Countdown Styles */
+#countdown {
+    font-size: 24px;
+    margin-top: 20px;
+}
+/* Image Styles */
+img {
+    max-width: 20%;
+    height: auto;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+/* Header Styles */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure it's above other content */
+    background-color: #0056b3;
+    color: #fff;
+    padding: 20px 0;
+    height: inherit;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%; /* Adjust width to your preference */
+    margin: 0 auto;
+}
+
+/* Adjustments for content below the fixed header */
+main {
+    padding-top: 80px; /* Adjust this value to match the height of your fixed header */
+}
+@media only screen and (max-width: 600px) {
+    
+    nav ul {
+        display: none;
+    }
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000; /* Ensure it's above other content */
+        background-color: #0056b3;
+    }
+    header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        width: 100%;
+        text-align: center;
+
+    }
+    
+    img {
+        max-width: 40%; /* Adjust max-width as needed */
+        height: auto;
+        margin-left: 30%;
+    }
+
+}
